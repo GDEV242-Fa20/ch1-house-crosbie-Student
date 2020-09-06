@@ -56,11 +56,11 @@ public class Picture
             roof.moveVertical(-60);
             roof.makeVisible();
     
-            bullseye.changeColor("yellow");
-            bullseye.moveHorizontal(100);
-            bullseye.moveVertical(-40);
-            bullseye.changeSize(80);
-            bullseye.makeVisible();
+            firstring.changeColor("magenta");
+            firstring.moveHorizontal(100);
+            firstring.moveVertical(-40);
+            firstring.changeSize(160);
+            firstring.makeVisible();
             
             secondring.changeColor("blue");
             secondring.moveHorizontal(100);
@@ -68,12 +68,11 @@ public class Picture
             secondring.changeSize(120);
             secondring.makeVisible();
             
-            firstring.changeColor("magenta");
-            firstring.moveHorizontal(100);
-            firstring.moveVertical(-40);
-            firstring.changeSize(160);
-            firstring.makeVisible();
-            
+            bullseye.changeColor("yellow");
+            bullseye.moveHorizontal(100);
+            bullseye.moveVertical(-40);
+            bullseye.changeSize(80);
+            bullseye.makeVisible();
             drawn = true;
         }
     }
