@@ -14,7 +14,9 @@ public class Picture
     //private Square wall;
     //private Square window;
     private Triangle roof;
-    private Circle sun;
+    private Circle bullseye;
+    private Circle secondring;
+    private Circle firstring;
     private boolean drawn;
 
     /**
@@ -25,7 +27,9 @@ public class Picture
         //wall = new Square();
         //window = new Square();
         roof = new Triangle();  
-        sun = new Circle();
+        bullseye = new Circle();
+        secondring = new Circle();
+        firstring = new Circle();
         drawn = false;
     }
 
@@ -52,11 +56,24 @@ public class Picture
             roof.moveVertical(-60);
             roof.makeVisible();
     
-            sun.changeColor("yellow");
-            sun.moveHorizontal(100);
-            sun.moveVertical(-40);
-            sun.changeSize(80);
-            sun.makeVisible();
+            bullseye.changeColor("yellow");
+            bullseye.moveHorizontal(100);
+            bullseye.moveVertical(-40);
+            bullseye.changeSize(80);
+            bullseye.makeVisible();
+            
+            secondring.changeColor("blue");
+            secondring.moveHorizontal(100);
+            secondring.moveVertical(-40);
+            secondring.changeSize(120);
+            secondring.makeVisible();
+            
+            firstring.changeColor("magenta");
+            firstring.moveHorizontal(100);
+            firstring.moveVertical(-40);
+            firstring.changeSize(160);
+            firstring.makeVisible();
+            
             drawn = true;
         }
     }
@@ -69,7 +86,7 @@ public class Picture
         // wall.changeColor("black");
         // window.changeColor("white");
         roof.changeColor("black");
-        sun.changeColor("black");
+        //sun.changeColor("black");
     }
 
     /**
@@ -80,6 +97,6 @@ public class Picture
         // wall.changeColor("red");
         // window.changeColor("black");
         roof.changeColor("green");
-        sun.changeColor("yellow");
+        //sun.changeColor("yellow");
     }
 }
